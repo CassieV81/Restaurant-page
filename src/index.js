@@ -20,6 +20,7 @@ nav.appendChild(home());
 nav.appendChild(menuNav());
 nav.appendChild(contactNav());
 nav.appendChild(aboutNav());
+content.appendChild(homeContent());
 document.body.appendChild(header);
 document.body.appendChild(content);
 
@@ -31,18 +32,22 @@ navButtons.forEach((button) => {
     switch( true ) {
       case buttonClass.contains('homeNavButton'):
         content.innerHTML = '';
+        button.classList.add('btnClk');
         content.appendChild(homeContent());
         break;
       case buttonClass.contains('contactNavButton'):
         content.innerHTML = '';
+        button.classList.add('btnClk');
         content.appendChild(contactContent());
         break;
         case buttonClass.contains('menuNavButton'):
           content.innerHTML = '';
+          button.classList.add('btnClk');
           content.appendChild(menuContent());
           break;
       case buttonClass.contains('aboutNavButton'):
         content.innerHTML = '';
+        button.classList.add('btnClk');
         content.appendChild(aboutContent());
         break;
     }
