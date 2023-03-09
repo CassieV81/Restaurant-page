@@ -1,9 +1,16 @@
 
-function title() {
+export function home() {
+  
+  const button = document.createElement('button');
+  button.classList.add('homeNavButton');
+  button.innerText = "Home";
+
+  return button;
+}
+
+export function homePage() {
   const element = document.createElement('h1');
-  element.innerText = "Erimeri";
+  element.innerText = 'Erimeri';
 
   return element;
 }
-
-export default title;

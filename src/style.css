@@ -1,10 +1,13 @@
 
 :root {
   --bgColor: #8E806A;
+  --fontStyle: monospace, Verdana, Tahoma, sans-serif;
 }
 
 body {
-  height: 80vh;
+  height: 100%;
+  margin: 0;
+  font-family: var(--fontStyle);
   background-color: var(--bgColor);
 }
 
@@ -25,6 +28,7 @@ div:has(button) {
 }
 button {
   background-color: var(--bgColor);
+  font-family: var(--fontStyle);
   border: none;
   outline: none;
   cursor: pointer;
@@ -35,4 +39,5 @@ button {
 }
 button:hover {
   transform: scale(1.2);
+  text-decoration: underline;
 }
