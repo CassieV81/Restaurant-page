@@ -1,5 +1,38 @@
 
+:root {
+  --bgColor: #8E806A;
+}
+
 body {
   height: 80vh;
-  background-color: #8E806A;
+  background-color: var(--bgColor);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 30px;
+}
+
+div:has(h1) {
+  /* flex-grow: 1; */
+}
+div:has(button) {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
+button {
+  background-color: var(--bgColor);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  transition: .3s;
+}
+button:hover {
+  transform: scale(1.2);
 }

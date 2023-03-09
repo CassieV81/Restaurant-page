@@ -5,10 +5,14 @@ import aboutNav from './about.js';
 import './style.css';
 
 
-const content = document.createElement('div');
-content.classList.add('header');
-content.appendChild(print());
-content.appendChild(menuNav());
-content.appendChild(contactNav());
-content.appendChild(aboutNav());
-document.body.appendChild(content);
+const header = document.createElement('div');
+const title = document.createElement('div');
+const nav = document.createElement('div');
+header.appendChild(title);
+header.appendChild(nav);
+header.classList.add('header');
+title.appendChild(print());
+nav.appendChild(menuNav());
+nav.appendChild(contactNav());
+nav.appendChild(aboutNav());
+document.body.appendChild(header);
