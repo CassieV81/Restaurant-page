@@ -1,5 +1,5 @@
 
-import { home, homePage } from './home.js';
+import { home, homeContent, homePage } from './home.js';
 import { menuNav, menuContent } from './menu.js';
 import { contactNav, contactContent } from './contact.js';
 import { aboutContent, aboutNav } from './about.js';
@@ -30,15 +30,19 @@ navButtons.forEach((button) => {
     let buttonClass = button.classList;
     switch( true ) {
       case buttonClass.contains('homeNavButton'):
-        content.appendChild();
+        content.innerHTML = '';
+        content.appendChild(homeContent());
         break;
       case buttonClass.contains('contactNavButton'):
+        content.innerHTML = '';
         content.appendChild(contactContent());
         break;
         case buttonClass.contains('menuNavButton'):
+          content.innerHTML = '';
           content.appendChild(menuContent());
           break;
       case buttonClass.contains('aboutNavButton'):
+        content.innerHTML = '';
         content.appendChild(aboutContent());
         break;
     }
