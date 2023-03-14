@@ -9,7 +9,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: var(--fontStyle);
-  background: url(./bg.jpg);
+  background: url(./bg2.jpg);
   background-color: var(--bgColor);
   background-position: center;
   background-repeat: no-repeat;
@@ -35,9 +35,9 @@ h1 {
   font-size: 2.5em;
 }
 div:has(button) {
-  /* margin-left: auto; */
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-grow: 2;
   gap: 50px;
   height: 100%;
 }
@@ -65,17 +65,18 @@ button:hover {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  height: clamp(30%, 50vh, 100%);
 }
 .tabContent {
   background-color: var(--bgColor);
   padding: 10px;
-  height: 100%;
-  width: 100%;
+  height: fit-content;
+  width: 80%;
   border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  width: 80%;
+  height: 80%;
 }

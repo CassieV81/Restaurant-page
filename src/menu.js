@@ -1,4 +1,6 @@
 
+import './style.css';
+
 export function menuNav() {
   const element = document.createElement('button');
   element.classList.add('menuNavButton');
